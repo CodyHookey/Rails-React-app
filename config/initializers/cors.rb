@@ -9,6 +9,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
     # Where the request comes from e.g. IP address or URL of react app
     origins "http://127.0.0.1:5173"
+    origins "http://localhost:5173"
 
     resource "*",
       headers: :any,
